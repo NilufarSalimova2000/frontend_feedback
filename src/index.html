@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#F7F8FD]">
+    <section class="pt-[94px] pb-[129px]">
+        <div class="container">
+            <div class="flex gap-[30px]">
+                <div>
+                    <div class="w-[255px] pt-[62px] pb-[24px] pl-[24px] rounded-[10px] mb-[24px]"
+                        style="background-image: url(./img/Oval.svg); background-repeat: no-repeat;">
+                        <h2 class="font-bold text-[20px] tracking-[-0.01em] text-[#fff]">Frontend Mentor</h2>
+                        <p class="font-medium text-[15px] text-[#E5D1FD]">Feedback Board</p>
+                    </div>
+                    <div
+                        class="w-[255px] py-[24px] pl-[24px] pr-[50px] rounded-[10px] bg-[#fff] mb-[24px] flex flex-wrap gap-[8px] tab_list">
+                    </div>
+                    <div class="w-[255px] pt-[19px] px-[24px] pb-[24px] rounded-[10px] bg-[#fff]">
+                        <div class="flex items-center justify-between mb-[24px]">
+                            <p class="font-bold text-[18px] tracking-[-0.01em] text-[#3a4374]">Roadmap</p>
+                            <a class="font-semibold text-[13px] text-[#4661e6] underline" href="#">View</a>
+                        </div>
+                        <div class="flex items-center justify-between mb-[8px]">
+                            <div class="flex items-center gap-[16px]">
+                                <span class="rounded-[50%] w-[8px] h-[8px] bg-[#f49f85] inline-block"></span>
+                                <p class="font-normal text-[16px] text-[#647196]">Planned</p>
+                            </div>
+                            <p class="font-bold text-[16px] text-[#647196] ">2</p>
+                        </div>
+                        <div class="flex items-center justify-between mb-[8px]">
+                            <div class="flex items-center gap-[16px]">
+                                <span class="rounded-[50%] w-[8px] h-[8px] bg-[#ad1fea] inline-block"></span>
+                                <p class="font-normal text-[16px] text-[#647196]">In-Progress</p>
+                            </div>
+                            <p class="font-bold text-[16px] text-[#647196] ">3</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[16px]">
+                                <span class="rounded-[50%] w-[8px] h-[8px] bg-[#62bcfa] inline-block"></span>
+                                <p class="font-normal text-[16px] text-[#647196]">Live</p>
+                            </div>
+                            <p class="font-bold text-[16px] text-[#647196] ">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="w-[825px] rounded-[10px] bg-[#373f68] py-[23px] pl-[24px] pr-[16px] flex justify-between mb-[24px]">
+                        <div class="flex items-center gap-[38px]">
+                            <div class="flex gap-[16px]">
+                                <img src="./img/icon1.svg" alt="imag">
+                                <p class="font-bold text-[18px] tracking-[-0.01em] text-[#fff]">6 Suggestions</p>
+                            </div>
+                            <div class="flex gap-[5px]">
+                                <p class="font-normal text-[14px] text-[#f2f4fe]">Sort by :</p>
+                                <div class="flex gap-[9px]">
+                                    <p class="font-bold text-[14px] text-[#f2f4fe] before: ">Most Upvotes</p>
+                                    <img src="./img/icon.2.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <input class="search_input rounded-[10px] py-[12px] px-[24px] border border-[2px] "
+                            type="search" placeholder="Search">
+                        <button
+                            class="add_btn font-bold text-[14px] text-[#f2f4fe] rounded-[10px] bg-[#ad1fea] py-[12px] px-[24px] inline-block">+
+                            Add Feedback</button>
+
+                            <!-- Modal Structure -->
+                            <div class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+                                <div class="modal-content bg-white px-[42px] py-[52px] rounded-[10px] w-[540px] relative">
+                                    <div class="flex items-center space-x-3 mb-6">
+                                        <div>
+                                            <img src="./img/add_icon.svg" alt="icon">
+                                        </div>
+                                        <h2 class="font-bold text-[24px] text-[#3A4374]">Create New Feedback</h2>
+                                    </div>
+                            
+                                    <form>
+                                        <div class="mb-6">
+                                            <label class="font-bold text-[#3A4374] text-[14px] mb-2 block">Feedback Title</label>
+                                            <p class="text-[#647196] text-[14px] mb-2">Add a short, descriptive headline</p>
+                                            <input type="text" class="border rounded-md p-2 w-full text-[#3A4374] bg-[#F7F8FD]" />
+                                        </div>
+                            
+                                        <div class="mb-6">
+                                            <label class="font-bold text-[#3A4374] text-[14px] mb-2 block">Category</label>
+                                            <p class="text-[#647196] text-[14px] mb-2">Choose a category for your feedback</p>
+                                            <select class="border rounded-md p-2 w-full bg-[#F7F8FD] text-[#3A4374]">
+                                                <option>Feature</option>
+                                                <option>Enhancement</option>
+                                                <option>Bug</option>
+                                            </select>
+                                        </div>
+                            
+                                        <div class="mb-8">
+                                            <label class="font-bold text-[#3A4374] text-[14px] mb-2 block">Feedback Detail</label>
+                                            <p class="text-[#647196] text-[14px] mb-2">Include any specific comments on what should be improved, added, etc.</p>
+                                            <textarea rows="4" class="border rounded-md p-2 w-full bg-[#F7F8FD] text-[#3A4374]"></textarea>
+                                        </div>
+                            
+                                        <div class="flex justify-end gap-4">
+                                            <button type="button" class="close-modal-btn bg-[#373F68] text-white py-2 px-4 rounded-lg">Cancel</button>
+                                            <button type="submit" class="bg-gradient-to-r from-[#AD1FEA] to-[#C75AF6] text-white py-2 px-4 rounded-lg">Add Feedback</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <ul class="feedback_list">
+                        <!-- <li class="w-[825px] rounded-[10px] bg-[#fff] py-[28px] px-[32px] flex items-center justify-between mb-[20px]">
+                            <div class="flex items-start gap-[40px]">
+                                <a class="font-bold text-[13px] tracking-[-0.01em] text-[#3a4374] text-center rounded-[10px] bg-[#f2f4fe] px-[9px] pb-[8px] pt-[14px] inline-block" href="#">
+                                    <img class="mb-[8px] ml-[5px]" src="./img/icon3.svg" alt="icon">
+                                    112
+                                </a>
+                                <div>
+                                    <p class="font-bold text-[18px] tracking-[-0.01em] text-[#3a4374] mb-[4px]">Add tags for solutions</p>
+                                    <p class="font-normal text-[16px] text-[#647196] mb-[12px]">Easier to search for solutions based on a specific stack.</p>
+                                    <a class="font-semibold text-[13px] text-[#4661e6] rounded-[10px] bg-[#f2f4ff] py-[6px] px-[16px]" href="#">Enhancement</a>
+                                </div>
+                            </div>
+                            <div class="flex gap-[8px]">
+                                <img src="./img/icon4.svg" alt="icon">
+                                <p class="font-bold text-[16px] tracking-[-0.01em] text-[#3a4374]">2</p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
